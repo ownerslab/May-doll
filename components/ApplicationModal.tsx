@@ -61,7 +61,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
           </p>
           <button 
             onClick={onClose}
-            className="w-full py-3 bg-pink-500 text-white rounded-xl font-bold hover:bg-pink-600 transition"
+            className="w-full py-3 bg-emerald-700 text-white rounded-xl font-bold hover:bg-emerald-800 transition"
           >
             閉じる
           </button>
@@ -86,10 +86,10 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
           
           {/* Selected Product Summary */}
           {selectedProduct ? (
-            <div className="flex items-center gap-4 p-4 bg-pink-50 rounded-xl border border-pink-100">
+            <div className="flex items-center gap-4 p-4 bg-emerald-50 rounded-xl border border-emerald-100">
               <img src={selectedProduct.image} alt="Selected" className="w-16 h-16 rounded-lg object-cover" />
               <div>
-                <p className="text-xs text-pink-600 font-bold">選択中の商品</p>
+                <p className="text-xs text-emerald-700 font-bold">選択中の商品</p>
                 <p className="font-bold text-stone-800">{selectedProduct.code} - ¥{selectedProduct.salePrice?.toLocaleString()}</p>
               </div>
             </div>
@@ -106,7 +106,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
               <input 
                 required
                 type="text" 
-                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-pink-300 outline-none"
+                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-300 outline-none"
                 placeholder="山田 花子"
                 value={formData.name}
                 onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -118,7 +118,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
               <input 
                 required
                 type="text" 
-                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-pink-300 outline-none"
+                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-300 outline-none"
                 placeholder="@your_account"
                 value={formData.instagramHandle}
                 onChange={(e) => setFormData({...formData, instagramHandle: e.target.value})}
@@ -130,7 +130,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
               <input 
                 required
                 type="email" 
-                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-pink-300 outline-none"
+                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-300 outline-none"
                 placeholder="example@email.com"
                 value={formData.email}
                 onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -142,7 +142,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
               <div className="grid grid-cols-1 gap-3">
                 <label className={`
                   flex items-center p-3 border rounded-xl cursor-pointer transition
-                  ${formData.plan === 'commission' ? 'border-pink-500 bg-pink-50' : 'border-stone-200'}
+                  ${formData.plan === 'commission' ? 'border-emerald-600 bg-emerald-50' : 'border-stone-200'}
                 `}>
                   <input 
                     type="radio" 
@@ -150,7 +150,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
                     value="commission" 
                     checked={formData.plan === 'commission'}
                     onChange={() => setFormData({...formData, plan: 'commission'})}
-                    className="mr-3 text-pink-500 focus:ring-pink-500"
+                    className="mr-3 text-emerald-600 focus:ring-emerald-600"
                   />
                   <div>
                     <span className="font-bold block">成果報酬プラン (10%)</span>
@@ -160,7 +160,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
                 
                 <label className={`
                   flex items-center p-3 border rounded-xl cursor-pointer transition
-                  ${formData.plan === 'fixed_commission' ? 'border-pink-500 bg-pink-50' : 'border-stone-200'}
+                  ${formData.plan === 'fixed_commission' ? 'border-emerald-600 bg-emerald-50' : 'border-stone-200'}
                 `}>
                   <input 
                     type="radio" 
@@ -168,7 +168,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
                     value="fixed_commission" 
                     checked={formData.plan === 'fixed_commission'}
                     onChange={() => setFormData({...formData, plan: 'fixed_commission'})}
-                    className="mr-3 text-pink-500 focus:ring-pink-500"
+                    className="mr-3 text-emerald-600 focus:ring-emerald-600"
                   />
                   <div>
                     <span className="font-bold block">固定費 + 成果報酬プラン</span>
@@ -187,7 +187,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
                  <div className="space-y-1 text-center">
                     <Upload className="mx-auto h-12 w-12 text-stone-400" />
                     <div className="flex text-sm text-stone-600">
-                      <label className="relative cursor-pointer rounded-md font-medium text-pink-600 hover:text-pink-500 focus-within:outline-none">
+                      <label className="relative cursor-pointer rounded-md font-medium text-emerald-600 hover:text-emerald-500 focus-within:outline-none">
                         <span>ファイルをアップロード</span>
                         <input type="file" className="sr-only" onChange={handleFileChange} accept="image/*" />
                       </label>
@@ -205,7 +205,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
             <div>
               <label className="block text-sm font-bold text-stone-700 mb-1">メッセージ・意気込み</label>
               <textarea 
-                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-pink-300 outline-none h-24 resize-none"
+                className="w-full p-3 border border-stone-200 rounded-xl focus:ring-2 focus:ring-emerald-300 outline-none h-24 resize-none"
                 placeholder="PR投稿に対する意気込みやご質問があればご記入ください。"
                 value={formData.message}
                 onChange={(e) => setFormData({...formData, message: e.target.value})}
@@ -219,7 +219,7 @@ const ApplicationModal: React.FC<ApplicationModalProps> = ({ isOpen, onClose, se
               disabled={isSubmitting || !selectedProduct}
               className={`
                 w-full py-4 rounded-xl font-bold text-white shadow-lg text-lg flex items-center justify-center gap-2
-                ${isSubmitting || !selectedProduct ? 'bg-stone-300 cursor-not-allowed' : 'bg-pink-500 hover:bg-pink-600 active:scale-95 transition-all'}
+                ${isSubmitting || !selectedProduct ? 'bg-stone-300 cursor-not-allowed' : 'bg-emerald-700 hover:bg-emerald-800 active:scale-95 transition-all'}
               `}
             >
               {isSubmitting ? (

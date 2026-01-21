@@ -29,7 +29,7 @@ const ProductGallery: React.FC = () => {
                       <span className="text-xs text-stone-400 line-through">
                         定価 ¥{product.price.toLocaleString()}
                       </span>
-                      <span className="text-lg font-bold text-pink-600">
+                      <span className="text-lg font-bold text-emerald-700">
                         セール ¥{product.salePrice.toLocaleString()}
                       </span>
                     </>
