@@ -27,13 +27,14 @@ function App() {
           <p className="text-emerald-700 font-bold tracking-widest mb-2 text-sm">PR CAMPAIGN INFO</p>
           <h1 className="text-3xl md:text-4xl font-extrabold text-stone-800 mb-6 leading-relaxed">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-600 to-amber-600">
-              おしゃれ雛人形
+              あなたの「好き」がきっと見つかる 五月人形
             </span><br/>
-            PRインフルエンサー募集のご案内
+            PRインフルエンサー募集
           </h1>
           <p className="text-stone-600 mb-8 leading-7">
-            マンションにも飾れるコンパクトでモダンな<br/>
-            <span className="font-bold text-stone-800">「新しい雛人形」</span><br/>
+            流行の「くすみカラー」から、信頼の「久月・吉徳」まで。<br/>
+            国内最大級のラインナップから選べる<br/>
+            <span className="font-bold text-stone-800">「兜飾り・五月人形」</span><br/>
             のご紹介案件です。
           </p>
         </div>
@@ -64,25 +65,34 @@ function App() {
         <section className="bg-white rounded-2xl p-6 shadow-sm border border-stone-100">
           <div className="flex items-center gap-2 mb-4">
             <Sparkles className="text-emerald-600" />
-            <h2 className="text-xl font-bold text-stone-800">商品のこだわり</h2>
+            <h2 className="text-xl font-bold text-stone-800">🎏 商品のこだわり</h2>
           </div>
           <div className="space-y-4">
              <div className="flex gap-4 items-start">
                <div className="bg-emerald-50 p-2 rounded-full min-w-[40px] flex items-center justify-center">
-                 <Home size={24} className="text-emerald-600" />
+                 <span className="text-emerald-700 font-bold text-lg">①</span>
                </div>
                <div>
-                 <h3 className="font-bold text-stone-800">インテリアに馴染むデザイン</h3>
-                 <p className="text-sm text-stone-500 mt-1">「マンションだからコンパクトなものがいい」「部屋の雰囲気を壊さないナチュラルなデザインが好き」そんな声に応える雛人形です。</p>
+                 <h3 className="font-bold text-stone-800">令和の住まいに馴染む「トレンドデザイン」</h3>
+                 <p className="text-sm text-stone-500 mt-1">「いかついのは苦手」というママの声から生まれた、木目調やアクリル素材、グレージュなどのニュアンスカラーの兜たち。北欧風やナチュラルなインテリアにも違和感なく溶け込み、日常の風景として飾っていただけます。</p>
                </div>
              </div>
              <div className="flex gap-4 items-start">
                <div className="bg-emerald-50 p-2 rounded-full min-w-[40px] flex items-center justify-center">
-                 <Camera size={24} className="text-emerald-600" />
+                 <span className="text-emerald-700 font-bold text-lg">②</span>
                </div>
                <div>
-                 <h3 className="font-bold text-stone-800">写真映えする美しさ</h3>
-                 <p className="text-sm text-stone-500 mt-1">細部までこだわった衣装や小物は、記念撮影やSNSでのシェアにも最適。大切な思い出を美しく彩ります。</p>
+                 <h3 className="font-bold text-stone-800">祖父母も納得の「老舗ブランド＆本格派」</h3>
+                 <p className="text-sm text-stone-500 mt-1">業界大手の「久月」「吉徳大光」とのコラボモデルや、上杉謙信・伊達政宗などの人気武将モデルも多数ご用意。伝統的な「黒×金」の力強いデザインは、贈り物としての品格と安心感を兼ね備えています。</p>
+               </div>
+             </div>
+             <div className="flex gap-4 items-start">
+               <div className="bg-emerald-50 p-2 rounded-full min-w-[40px] flex items-center justify-center">
+                 <span className="text-emerald-700 font-bold text-lg">③</span>
+               </div>
+               <div>
+                 <h3 className="font-bold text-stone-800">飾るのも片付けも楽な「機能性」</h3>
+                 <p className="text-sm text-stone-500 mt-1">届いてそのまま飾れる「ケース飾り」や、飾り台の中に兜をしまえる「収納飾り」、お子様が実際に被って記念撮影できる「着用兜」など。スペースや用途に合わせて、ママ目線で嬉しい機能を選べます。</p>
                </div>
              </div>
           </div>
