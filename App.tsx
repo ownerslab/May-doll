@@ -182,7 +182,7 @@ function App() {
                  <ul className="text-sm text-stone-600 space-y-2">
                    <li className="flex items-start gap-2">
                      <span className="text-emerald-600 mt-0.5">・</span>
-                     <span>フォロワーさんが使える発信者様専用のクーポン（1,000円）を発行します</span>
+                     <span>フォロワーさんが使える発信者様専用のクーポン（1,000円以上）を発行します</span>
                    </li>
                    <li className="flex items-start gap-2">
                      <span className="text-emerald-600 mt-0.5">・</span>
